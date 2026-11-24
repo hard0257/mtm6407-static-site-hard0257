@@ -1,0 +1,103 @@
+/* Portfolio colour palette */
+:root {
+  --vp-c-brand-1: #4f46e5;
+  --vp-c-brand-2: #4338ca;
+  --vp-c-brand-3: #4f46e5;
+  --vp-c-brand-soft: rgba(79, 70, 229, 0.14);
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(
+    120deg, #4f46e5, #0891b2
+  );
+
+  --vp-font-family-base: Arial, Helvetica, sans-serif;
+}
+
+/* Dark mode colours */
+.dark {
+  --vp-c-brand-1: #a5b4fc;
+  --vp-c-brand-2: #818cf8;
+  --vp-c-brand-3: #4338ca;
+}
+
+/* Homepage */
+.VPHero {
+  padding-top: 90px !important;
+  padding-bottom: 70px !important;
+}
+
+.VPHero .tagline {
+  line-height: 1.6;
+}
+
+/* Feature cards */
+.VPFeature {
+  border-radius: 16px !important;
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.VPFeature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Navigation */
+.VPNavBarTitle .title {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Content pages */
+.vp-doc h1 {
+  color: var(--vp-c-brand-1);
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.vp-doc h2 {
+  margin-top: 40px;
+}
+
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.8;
+}
+
+/* Buttons */
+.VPButton {
+  transition: background-color 0.2s ease;
+}
+
+/* Footer */
+.VPFooter {
+  padding: 30px 20px !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .VPHero {
+    padding-top: 45px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .vp-doc h1 {
+    font-size: 30px;
+  }
+
+  .vp-doc h2 {
+    font-size: 24px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .VPFeature,
+  .VPButton {
+    transition: none;
+  }
+
+  .VPFeature:hover {
+    transform: none;
+  }
+}

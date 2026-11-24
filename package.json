@@ -1,0 +1,30 @@
+{
+  "name": "mtm6407-static-site-hard0257",
+  "version": "1.0.0",
+  "description": "Personal portfolio website created using VitePress for MTM6407.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hard0257/mtm6407-static-site-hard0257.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hard0257/mtm6407-static-site-hard0257/issues"
+  },
+  "homepage": "https://github.com/hard0257/mtm6407-static-site-hard0257#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  },
+  "allowScripts": {
+    "esbuild@0.21.5": true
+  }
+}
